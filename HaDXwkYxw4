@@ -27,7 +27,7 @@ generate_login() { tr -dc 'A-Za-z' < /dev/urandom | head -c 6; }
 
 echo -e "${CYAN}"
 echo    "##############################################################"
-echo    "#           Marzban (Cloudflare Edition, alexcoder)          #"
+echo    "#               Marzban (Cloudflare Edition)                 #"
 echo    "#         Быстрая установка с Nginx и Cloudflare SSL         #"
 echo    "#                                                            #"
 echo    "# Установщик разработан alexcoder для курса на skladchik.org #"
@@ -200,8 +200,8 @@ EOF
 
 chmod 600 "$INFO_FILE"
 
-echo -e "${GREEN}🎉 Marzban установлен и готов к работе!${NC}\n"
-echo -e "🌍 ${CYAN}Панель управления:${NC} http://$IP:8000/dashboard"
+echo -e "${GREEN}🎉 Ваша панель установлена и готова к работе!${NC}\n"
+echo -e "🌍 ${CYAN}Панель управления:${NC} https://$DOMAIN/dashboard"
 echo -e "👤 ${CYAN}Логин администратора:${NC} $ADMIN_USER"
 echo -e "🔑 ${CYAN}Пароль администратора:${NC} $ADMIN_PASS\n"
 echo -e "📄 ${YELLOW}Вся информация об установке сохранена в: ${CYAN}$INFO_FILE${NC}"
@@ -210,4 +210,4 @@ echo -e "${BLUE}Установщик разработан alexcoder и явля�
 echo -e "${CYAN}Ваш сервер готов к работе 🚀 !${NC}\n"
 echo -e "${GREEN}👇Теперь запустите команду для генерации xray конфига:👇${NC}\n"
 echo -e "${BLUE}bash <(curl -fsSL https://raw.githubusercontent.com/a1exc0der/CToWCp/refs/heads/main/L6GrFy)${NC}\n"
-echo -e "${GREEN}☝️Скопируйте эту команду, вставьте в терминал ниже и нажмите Enter☝️${NC}\n"
+echo -e "${GREEN}☝️ Скопируйте эту команду, вставьте в терминал ниже и нажмите Enter ☝️${NC}\n"
